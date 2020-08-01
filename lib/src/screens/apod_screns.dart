@@ -16,7 +16,7 @@ List<Widget> _childrens = new List();
 @override
 void initState() { 
   super.initState();
-  _apodRecedList
+  _childrens.add(_apodRecentList());
   _childrens.add(Text('Contenido Recent'));
   _childrens.add(Text('Contenido Random'));
   _childrens.add(Text('Contenido Save'));
@@ -76,7 +76,7 @@ void initState() {
   }
 
 
-Widget _apodRecedList(){
+Widget _apodRecentList(){
   return ListView(
     children:<Widget>[
 CupertinoCard(),
